@@ -1,0 +1,36 @@
+html {direction: rtl;}
+.box-holder .content { margin-left: 0; margin-right: 205px; }
+.avatar { display: block; height: 50px; width: 50px; position: absolute; top: 0; right: 0; margin-right: -25px; }
+.hx-user-nav>.nav-item.dropdown>.nav-link .user-name { margin-right: 20px; margin-left: 0; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul { padding-right: 0; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .icon, .hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .img,
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .icon,
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .img { float: right; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .content,
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .content { padding-right: 50px; padding-left: 0; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a>.content .date { float: left; }
+.hx-icons-nav {padding-right: 0;}
+@media (max-width:768px) {
+.box-holder .content { margin-right: 0 !important; }
+.cmsbased-rtl .left-sidebar{left:auto;right:-280px;}
+.cmsbased-rtl .left-sidebar.show-fullsidebar {right:0; left: auto;}
+.cmsbased-rtl  .hx-top-header .hx-top-nav { flex: 0 1; }
+}
+.page-header .icon { margin-left: 5px; }
+.sidebar-holder .nav li.nav-toggle { text-align: left; }
+.sidebar-holder span.icon { float: right; }
+.mini-sidebar .sidebar-holder span.icon { float: none; }
+.sidebar-holder .nav>li ul>li>a { padding: 10px 5px 10px 10px; }
+.sidebar-holder .arrow { float: left; }
+.mini-sidebar .sidebar-holder .arrow { float: none; }
+.sidebar-holder .nav>li ul { background-color: transparent; }
+.left-sidebar { border-right: 0; }
+.site-holder.mini-sidebar .content { margin-left: 0; margin-right: 60px; }
+.owl-carousel .date { margin-left: 10px; margin-right: 10px; }
+.table .glyphicon.glyphicon-chevron-right:before { content: ""; }
+.filter_top div.dataTables_filter { float: left; }
+input.input_search:focus { left: 0; right: auto; }
+input.input_search { background: transparent url( ../../img/search.png ) no-repeat scroll 5px 5px; left: 0; right: auto; padding-left: 33px; padding-right: 3px; }
+
+/*FLIP FA RTL ICONS*/
+.cmsbased-rtl .fa-chevron-right  { filter: progid:DXImageTransform.Microsoft.BasicImage( rotation=0, mirror=1 ); /* IE8 */ transform: scaleX( -1 ); }

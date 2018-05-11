@@ -1,0 +1,82 @@
+// compileCompressed, compressedFilenamePattern: ../../assets/css/skins/green.min.css
+
+// TYPOGRAPHY
+$font-size:               14px;
+
+//GENERAL
+$background-color:        #405665;
+$body-text-color:         rgb(38, 38, 38);
+$heading-text-color:      #666666;
+$table-background:        #ffffff;
+$avatar-rounded:          true;
+// BOOTSTRAP COLORS
+$default-text:            #ffffff;
+$default-bg:              #6f6f6f;
+$primary-text:            #ffffff;
+$primary-bg:              #2682b2;
+$info-text:               #ffffff;
+$info-bg:                 #078dbd;
+$success-text:            #ffffff;
+$success-bg:              #63B246;
+$warning-text:            #ffffff;
+$warning-bg:              #bd9207;
+$danger-text:             #ffffff;
+$danger-bg:               #bd3707;
+$outline-text:            #63B246;
+
+// SKIN COLORS
+$link-color:              #379ed4;
+$accent-color:            #63B246;
+$secondary-color:         #63B246;
+$neutral-color:           #c7c7cc;
+$well-color:              #ffffff;
+$logo-color:              #63B246;
+$logo-color-minimal:      #ffffff;
+$hamburger-menu:          #ffffff;
+$box-holder:              #f2f2f2;
+$left-sidebar:            #59727f;
+$left-sidebar-border:     #59727f;
+$left-sidebar-text:       #ffffff;
+$use-sidebar-accent:      false;
+$sidebar-border-color:    #59727f;
+$navbar-bg:               transparent;
+
+$cart-items:              hsla(0,0%,100%,0.6);
+$top-header-icons:        hsla(0,0%,100%,0.3);
+$top-header-bg:           #2A282A;
+$top-header-text:         #ffffff;
+$use-topbar-accent:       true;
+$use-topbar-borders:      false;
+
+$info-box-bg:             #ffffff;
+$news-panel-bg:           #333333;
+$news-panel-text:         #eeeeee;
+$news-panel-link:         #63B246;
+
+$ticket-admin-head-bg:    #cdc4cd;
+$ticket-admin-head-text:  rgba(0, 0, 0, .5);
+$ticket-user-head-bg:     #e4e3e4;
+$ticket-user-head-text:   rgba(0, 0, 0, .5);
+
+$datatable-panel:         #322a32;
+$datatable-panel-link:    #ffffff;
+$datatable-panel-footer:  #f3f1f4;
+
+$sub-footer-text:         #475b65;
+$sub-footer-link:         #ffffff;
+
+// MINIMAL
+$minimal-box-bg:          rgba(255,255,255,0.8);
+$minimal-box-text:        #3f77a4;
+$minimal-box-alt-text:    #ffffff;
+
+// FORMS
+$border-radius-base:      0px;
+$border-radius-forms:     0px;
+$form-color:              #555555;
+$form-background:         rgba(0, 0, 0, .02);
+$form-border:             rgba(0, 0, 0, .1);
+$form-placeholder:        #333333;
+
+body { font-size: $font-size; color: $body-text-color; background: $background-color; }
+@import "skin";

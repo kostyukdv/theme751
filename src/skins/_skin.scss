@@ -1,0 +1,196 @@
+//GENERAL
+h1, h2, h3, h4, h5, h6 { color: $heading-text-color; }
+.accent-color, .primary-color { color: $accent-color; }
+.secondary-color { color: $secondary-color; }
+.page-header{border-bottom: 1px solid $form-border;}
+.box-holder {background-color: $box-holder;}
+hr { color: $form-border; border-color: $form-border; }
+blockquote.page-information { background: $form-background; font-size: ceil(($font-size * 0.80)); }
+#pwstrengthbox { background-color: $form-background; color: $form-placeholder; }
+.logo {color: $logo-color;}
+.navbar .btn-nav-toggle-responsive { color: $hamburger-menu; }
+.minimal .logo {color: $logo-color-minimal;}
+.hx-top-header .navbar-brand {color: $logo-color; }
+.well { background-color: $well-color; box-shadow: none; border-radius: $border-radius-base; }
+.alert-white { background-color: #fefefe; border-color: #e26148; border: 1px solid #e3e3e3; }
+.standard-post-content { background: $news-panel-bg; border-radius: $border-radius-base; }
+.timeline {background: $news-panel-bg; }
+.list-group { background-color: $box-holder; }
+.sub-footer {color: $sub-footer-text; font-size: ceil(($font-size * 0.80)); }
+.sub-footer a {color: $sub-footer-link;}
+.sub-footer nav .menu li {border-left: 1px solid transparentize($sub-footer-link, 0.8);}
+.standard-post-date { background-color: lighten( $neutral-color, 10% ); }
+.panel-tickets>.adminheader, .panel-tickets>.adminheader h4 {background-color: $ticket-admin-head-bg; color: $ticket-admin-head-text; }
+.panel-tickets>.adminmsg {background-color: transparentize($ticket-admin-head-bg, .9); }
+.panel-tickets>.adminheader .badge {background-color: darken($ticket-admin-head-bg, 30%); color: invert($ticket-admin-head-text); }
+
+.panel-tickets>.clientheader, .panel-tickets>.clientheader h4 {background-color: $ticket-user-head-bg; color: $ticket-user-head-text; }
+.panel-tickets>.clientmsg {background-color: transparentize($ticket-user-head-bg, .9); }
+
+//LABELS, STATUS
+.label-pending, .label.pending, .label-warning, .label.pendingtransfer { background-color: $warning-bg; }
+.label-active, .label.active { background-color: $success-bg; }
+.label-suspended, .label.suspended { background-color: $neutral-color; }
+.label-terminated, .label.terminated { background-color: $danger-bg; }
+.label-cancelled, .label-expired, .label-closed, .label.cancelled, .label.expired { background-color: darken( $neutral-color, 20% ); }
+.label-fraud, .label.fraud { background-color: invert($background-color); }
+.label-unpaid, .label.unpaid { background-color: $danger-bg; }
+.label-paid, .label.paid { background-color: $success-bg; }
+.label-refunded, .label.refunded { background-color: $primary-bg; }
+.label-customer-reply, .label.collections .label-collections { background-color: $warning-bg; }
+.label-answered { background-color: $primary-bg; }
+.label-in, .label-open { background-color: $success-bg; }
+.status-pending, .status-pending.transfer { background-color: $warning-bg; }
+.status-active, .status-open, .status.completed { background-color: $success-bg; }
+.status-customer-reply, .status-suspended { background-color: $warning-bg; }
+.status-answered, .status-fraud { background-color: darken( $neutral-color, 80% ); }
+.status-cancelled, .status-expired, .status-terminated, .status-transferred.away { background-color: darken( $neutral-color, 20% ); }
+.status-inprogress { background-color: $success-bg; }
+.status-closed { background-color: $neutral-color; }
+.status-collections, .status-unpaid { background-color: $danger-bg; }
+.status-refunded { background-color: $info-bg; }
+.status-delivered, .status-onhold { background-color: $primary-bg; }
+.status-accepted, .status-paid { background-color: $success-bg; }
+.status-dead, .status-lost { background-color: $background-color; border: 1px solid invert($background-color); color: invert($background-color); }
+
+.product-status-pending { background-color: $warning-bg; }
+.product-status-active { background-color: #46a546; }
+.product-status-suspended { background-color: $primary-bg; }
+.product-status-cancelled, .product-status-terminated { background-color: darken( $neutral-color, 20% ); }
+.product-status-fraud { background-color: invert($background-color); }
+.product-status-text { color:  $background-color; }
+
+// BADGES
+.badge-success { background-color: $success-bg; }
+.badge-important { background-color: $danger-bg; }
+.badge-warning { background-color: $warning-bg; }
+
+// TOP BAR
+
+@if $avatar-rounded == true {
+.avatar { border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; margin-left: -25px; }
+.hx-user-nav>.nav-item.dropdown>.nav-link .user-name { margin-left: 20px; }
+}
+.cart-items { color: $cart-items; }
+.hx-top-header .hx-icons-nav>.nav-item.dropdown>.nav-link .indicator { background:  $success-bg; }
+.hx-top-header .hx-icons-nav>.nav-item.dropdown>.nav-link .icon, .hx-top-header .hx-icons-nav>.nav-item>.nav-link .icon { color: $top-header-icons; }
+.hx-icons-nav, .hx-user-nav { background-color: $top-header-bg; }
+.hx-top-header .navbar-nav>.nav-item.dropdown .dropdown-menu { background-color: $top-header-bg; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li { border-bottom: 1px solid lighten($top-header-bg, 5%);}
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .icon, .hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .img { background-color: darken($top-header-bg, 10%); }
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .icon, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .img { background-color: darken($top-header-bg, 10%); }
+.hx-top-header .hx-icons-nav .hx-messages>.dropdown-menu .footer a, .hx-top-header .hx-icons-nav .hx-notifications>.dropdown-menu .footer a, .hx-top-header .hx-icons-nav .hx-settings>.dropdown-menu .footer a { color: $top-header-text; background-color: darken($top-header-bg, 5%); }
+.hx-top-header .hx-icons-nav .hx-messages>.dropdown-menu .title, .hx-top-header .hx-icons-nav .hx-notifications>.dropdown-menu .title, .hx-top-header .hx-icons-nav .hx-settings>.dropdown-menu .title { color: $top-header-text; background-color: darken($top-header-bg, 5%); }
+.hx-top-header .hx-icons-nav>.nav-item.dropdown.open:hover>a:after, .hx-top-header .hx-icons-nav>.nav-item.dropdown.open>a:after { border-bottom: 10px solid darken($top-header-bg, 5%); }
+
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a>.content .name { color: transparentize( $top-header-text, 0.2); }
+
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li:hover, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li:hover { background-color: lighten( $left-sidebar, 1% ); }
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .img>span { color: lighten( $left-sidebar, 1% ); }
+
+
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li:hover>a,.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li:hover>a .icon>span,.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li:hover>a,.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li:hover>a .icon>span { color: $top-header-text; }
+
+.hx-top-header .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item { color:  $top-header-text; }
+.hx-top-header .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item:hover { background-color:  lighten( $left-sidebar, 1% ); color: $default-text; }
+.hx-user-nav>.nav-item.dropdown>.nav-link { color: $top-header-text; }
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .content .desc, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .content .desc { color: transparentize( $top-header-text, .4 ); }
+
+@if $use-topbar-accent == true {
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li:hover, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li:hover { background-color: $accent-color; }
+.hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .img>span { color: $accent-color; }
+.hx-top-header .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item:hover { background-color: $accent-color; color: $default-text; }
+}
+
+@if $use-topbar-borders == true {
+.hx-top-header .hx-icons-nav li { border-left: 1px solid lighten($top-header-bg, 5%);}
+}
+
+.hx-top-header .hx-icons-nav .hx-messages .hx-scroller>.content>ul>li>a .content .date, .hx-top-header .hx-icons-nav .hx-notifications .hx-scroller>.content>ul>li>a .content .date { color:transparentize( $top-header-text, .4 )  }
+.hx-top-header .hx-icons-nav .hx-settings .hx-scroller>.content>ul>li>a { color: transparentize( $top-header-text, 0.2); }
+
+.hx-top-header .hx-logout-nav>li>a { color: $top-header-text; }
+
+// BUTTONS
+.btn, button, input[type="submit"], .button { border-radius: $border-radius-base; }
+.btn-primary, button, input[type=submit] { background-color: $primary-bg;color: $primary-text; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background-color: darken( $primary-bg, 8% ); color: $primary-text; } }
+.btn-default { background: $default-bg !important; color: $default-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $default-bg, .1 ) !important; } }
+.btn-warning { background: $warning-bg !important; color: $warning-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $warning-bg, .1 ) !important; } }
+.btn-danger { background: $danger-bg !important; color: $danger-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $danger-bg, .1 ) !important; } }
+.btn-success { background: $success-bg !important; color: $success-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $success-bg, .1 ) !important; } }
+.btn-info { background: $info-bg !important; color: $info-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $info-bg, .1 ) !important; } }
+.btn-outline { border: 1px solid $outline-text; background: transparentize( $outline-text, 1 ) !important; color: $outline-text !important; &:active, &:active:focus, &:active:hover, &:focus, &:hover { background: transparentize( $outline-text, .95 ) !important; } }
+
+// SIDEBAR
+.left-sidebar { background-color: lighten($left-sidebar, 1%); border-right-color: $left-sidebar-border; font-size: ceil(($font-size * 0.90)) }
+.sidebar-holder .badge-default { background-color: lighten( $left-sidebar, 5% );}
+.sidebar-holder .nav li.active .badge-default { background-color: lighten( $left-sidebar, 20% ); }
+.sidebar-holder .nav li.nav-toggle { background-color: $top-header-bg; }
+.sidebar-holder .nav li a { color: $left-sidebar-text;background-color: lighten( $left-sidebar, 1% ); border-top: 1px solid $left-sidebar-border; }
+.sidebar-holder .nav > li ul { background-color: lighten( $left-sidebar, 1% ); }
+.sidebar-holder .nav li.active > a { background-color: lighten($left-sidebar,5%); color: $left-sidebar-text; }
+.sidebar-holder .nav li  a { color: $left-sidebar-text; &:hover { color: $left-sidebar-text; background-color: lighten($left-sidebar,5%); } }
+.sidebar-holder .nav > li ul > li > a {font-size: ceil(($font-size * 0.80))}
+@if $use-sidebar-accent == true {
+.sidebar-holder .nav li.active > a { background-color: $accent-color; color: lighten($accent-color,50%); }
+.sidebar-holder .nav li  a { color: $left-sidebar-text; &:hover { color: $left-sidebar-text; background-color: lighten($accent-color,40%); } }
+.sidebar-holder .badge-default { background-color: darken( $accent-color, 5% );}
+.sidebar-holder .nav li.active .badge-default { background-color: darken( $accent-color, 20% ); }
+}
+
+// INFOBOXES
+.bg-info,.bg-warn,.bg-inactive{background: $info-box-bg!important;}
+.bg-info-dark{background: $accent-color!important;}
+.bg-warn-dark{background: $secondary-color!important;}
+.bg-inactive-dark{background: $neutral-color!important;}
+.info-box span.icon{color: $default-text;}
+.info-details h4 { font-size: ceil(($font-size * 0.90)) }
+.site-holder.mini-sidebar .info-details h4 { font-size: ceil(($font-size * 1.20)) }
+
+// PANEL
+.panel-datatable>.panel-heading { color: $datatable-panel-link; background-color: $datatable-panel; }
+.panel-footer { background-color: $datatable-panel-footer; border-bottom-right-radius: $border-radius-base; border-bottom-left-radius: $border-radius-base;}
+.panel-news { border-radius: $border-radius-base; color: $news-panel-text; font-size: ceil(($font-size * 0.80))}
+.panel-news>.panel-heading { border-radius: $border-radius-base; background-color: $box-holder; }
+.panel-news>.panel-body { background-color: $news-panel-bg; }
+.panel-news>.panel-body a { color: $news-panel-link; }
+.panel, .well {border-radius: $border-radius-base;}
+.panel-heading { border-radius: $border-radius-base;}
+
+// FORMS
+.form-control { border-radius: $border-radius-forms; background-color: $form-background; color: $form-color; &:-moz-placeholder { color: $form-placeholder; } &::-moz-placeholder { color: $form-placeholder; } &:-ms-input-placeholder { color: $form-placeholder; } &::-webkit-input-placeholder { color: $form-placeholder; } }
+.form-control { border-color: $form-border; &:focus { border-color: transparentize ( $accent-color, 0.1 ); } }
+
+// TABLE
+.table { background-color: $table-background; }
+.table .table.timedetail { background-color: transparentize($navbar-bg, 1); }
+.table>thead>tr>th { font-size: ceil(($font-size * 0.80)); }
+
+/*MATERIAL*/
+.nav-material > li.active > a { color: $accent-color; &:hover { color: $accent-color; } }
+.nav-material > li > a { background: transparent; &:after {background: $accent-color;} }
+.nav-material > li > a:focus { background: transparent; }
+
+// ALERTS
+.alert-warning, .alert-pending { background: $warning-bg; color: $warning-text !important; a { text-decoration: underline; } .btn, .button, a { color: $warning-text !important; } .btn, .button { background: $warning-bg !important; text-decoration: none; border: 1px solid $warning-text; } .close { color: $warning-text !important; }}
+.alert-danger,  .alert-terminated { background: $danger-bg; color: $danger-text !important; a { text-decoration: underline; } .btn, .button, a { color: $danger-text !important; } .btn, .button { background: $danger-bg !important; text-decoration: none; border: 1px solid $danger-text; } .close { color: $danger-text !important; }}
+.alert-success, .alert-active { background: $success-bg; color: $success-text !important; a { text-decoration: underline; } .btn, .button, a { color: $success-text !important; } .btn, .button { background: $success-bg !important; text-decoration: none; border: 1px solid $success-text; } .close { color: $success-text !important; }}
+.alert-info { background: $info-bg; color: $info-text !important; a { text-decoration: underline; } .btn, .button, a { color: $info-text !important; } .btn, .button { background: $info-bg !important; text-decoration: none; border: 1px solid $info-text; } .close { color: $info-text !important; }}
+.alert-white { background: #ffffff; color: #333333 !important; a { text-decoration: underline; } .btn, .button, a { color: #333333 !important; } .btn, .button { background: #ffffff !important; text-decoration: none; border: 1px solid #333333; } .close { color: #ffffff !important; }}
+.alert-neutral, .alert-default, .alert-cancelled, .alert-suspended { background: $form-background; color: $form-placeholder !important; a { text-decoration: underline; } .btn, .button, a { color: $form-placeholder !important; } .btn, .button { background: $form-background !important; text-decoration: none; border: 1px solid $form-placeholder; } .close { color: $form-background !important; }}
+.alert-dark, .alert-fraud { background: #373737; color: #ffffff !important; a { text-decoration: underline; } .btn, .button, a { color: #ffffff !important; } .btn, .button { background: #373737 !important; text-decoration: none; border: 1px solid #ffffff; } .close { color: #373737 !important; }}
+
+// PAGINATION
+.pagination>li>a, .pagination>li>span { background: $primary-bg; color: $primary-text; }
+.pagination>li:first-child>a, .pagination>li:first-child>span { border-bottom-left-radius: $border-radius-base; border-top-left-radius: $border-radius-base; }
+.pagination>li:last-child>a, .pagination>li:last-child>span { border-bottom-right-radius: $border-radius-base; border-top-right-radius: $border-radius-base; }
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover { background: darken( $primary-bg, 5% ); color: $primary-text; }
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus,
+.pagination>.active>span:hover { background: darken( $primary-bg, 5% ); i { color: $primary-text; } }
+.pagination>li:first-child, .pagination>li:last-child { i { color: $primary-text; } }
+
+// MINIMAL
+.login-wrapper .box, .minimal .well-register {box-shadow:none; border-radius: $border-radius-base; background: $minimal-box-bg ;}
+.input-group-addon.input-lg, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.input-group-addon.btn, .input-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {border-radius: $border-radius-base;}
+.login-wrapper .no-account p, .login-wrapper .no-account a, .login-wrapper .no-account a:hover {color: $minimal-box-alt-text;}
+.login-wrapper .box .remember label, .login-wrapper .box h6 {color: $minimal-box-text;}

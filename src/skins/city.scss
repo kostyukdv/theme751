@@ -1,0 +1,86 @@
+// compileCompressed, compressedFilenamePattern: ../../assets/css/skins/city.min.css
+
+// TYPOGRAPHY
+$font-size:               14px;
+
+//GENERAL
+$background-color:        #6ed7fe;
+$body-text-color:         rgb(38, 38, 38);
+$heading-text-color:      #666666;
+$table-background:        transparent;
+$avatar-rounded:          true;
+
+// BOOTSTRAP COLORS
+$default-text:            #ffffff;
+$default-bg:              #999999;
+$primary-text:            #ffffff;
+$primary-bg:              #3542ce;
+$info-text:               #ffffff;
+$info-bg:                 #2ba651;
+$success-text:            #ffffff;
+$success-bg:              #8fce35;
+$warning-text:            #ffffff;
+$warning-bg:              #ce7435;
+$danger-text:             #ffffff;
+$danger-bg:               #ce358f;
+$outline-text:            #5dd0ed;
+
+// SKIN COLORS
+$link-color:              #358fce;
+$accent-color:            #5dd0ed;
+$secondary-color:         #8fce35;
+$neutral-color:           #c7c7cc;
+$well-color:              #ffffff;
+$logo-color:              #ffffff;
+$logo-color-minimal:      #ffffff;
+$hamburger-menu:          #ffffff;
+$box-holder:              #ffffff;
+$left-sidebar:            #59727f;
+$left-sidebar-border:     #59727f;
+$left-sidebar-text:       #ffffff;
+$use-sidebar-accent:      false;
+$sidebar-border-color:    #59727f;
+$navbar-bg:               transparent;
+
+$cart-items:              hsla(0,0%,100%,0.6);
+$top-header-icons:        hsla(0,0%,100%,0.3);
+$top-header-bg:           #475b65;
+$top-header-text:         #ffffff;
+$use-topbar-accent:       false;
+$use-topbar-borders:      false;
+
+$info-box-bg:             #ebeef2;
+$news-panel-bg:           #f7f8fa;
+$news-panel-text:         #666666;
+$news-panel-link:         #358fce;
+
+$ticket-admin-head-bg:    #cce9a4;
+$ticket-admin-head-text:  rgba(0, 0, 0, .5);
+$ticket-user-head-bg:     #c7eff9;
+$ticket-user-head-text:   rgba(0, 0, 0, .5);
+
+$datatable-panel:         #59b1f0;
+$datatable-panel-link:    #ffffff;
+$datatable-panel-footer:  #f7f7f7;
+
+$sub-footer-text:         #475b65;
+$sub-footer-link:         #ffffff;
+
+// MINIMAL
+$minimal-box-bg:          rgba(255,255,255,0.8);
+$minimal-box-text:        #3f77a4;
+$minimal-box-alt-text:    #ffffff;
+
+// FORMS
+$border-radius-base:      0px;
+$border-radius-forms:     0px;
+$form-color:              #555555;
+$form-background:         rgba(0, 0, 0, .02);
+$form-border:             rgba(0, 0, 0, .1);
+$form-placeholder:        #333333;
+
+body { font-size: $font-size; color: $body-text-color; background-color: $background-color;
+background-image: url("../../../img/city.jpg"); background-position: top center; background-repeat: no-repeat; }
+.navbar .user-menu{margin-right:15px;}
+
+@import "skin";
